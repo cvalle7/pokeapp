@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: #CC1000;
+    padding: 1rem;
+}
+
+.logo img{
+    margin-left: 10%;
+    width: 60%;
+}
+ 
+.navbar ul{
+    list-style: none;
+    display: flex;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    display: flex;
+    padding-right: 20px;
+    margin-right: 20px;
+}
