@@ -1,12 +1,14 @@
 .main-container{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-top: 5%;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 6%;
+    padding: 0 2% 0 2%;
 }
 
-.pokemon-list{
+.pokecard{
     display: flex;
     flex-direction: column;
+    width: 25%;
 }

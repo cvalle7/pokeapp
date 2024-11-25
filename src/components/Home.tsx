@@ -20,18 +20,16 @@ function Home() {
 
     return (
         <div className="main-container">
-
             {error && <p>{error}</p>}
-            <ul className="pokemon-list">
                 {pokemons.length > 0 && (
                     pokemons.map((p, index) => {
                         return (
-                            <li key={index}>{p.name} : {p.url}</li>
+                            <div className="pokecard" key={index}>
+                                {p.name}
+                            </div>
                         )
                     })
                 )}
-            </ul>
-
         </div>
     )
 }

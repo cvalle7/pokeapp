@@ -40,3 +40,7 @@
 .navbar-link:hover{
     color: #242424;
 }
+
+.is-active{
+    color: #FECA1B;
+}
