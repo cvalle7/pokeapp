@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import pokemonService from "../services/pokemon.service";
 import "../styles/app.css"
+import Card from "./Cards";
 function Home() {
 
     const [pokemons, setPokemons] = useState<any[]>([]);
@@ -21,15 +22,15 @@ function Home() {
     return (
         <div className="main-container">
             {error && <p>{error}</p>}
+            <div className="card-container">
                 {pokemons.length > 0 && (
                     pokemons.map((p, index) => {
                         return (
-                            <div className="pokecard" key={index}>
-                                {p.name}
-                            </div>
+                            <Card data={p} key={index} />
                         )
                     })
                 )}
+            </div>
         </div>
     )
 }

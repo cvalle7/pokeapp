@@ -12,3 +12,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+html, body{
+  overflow: auto;
+}
+
+.html, body::-webkit-scrollbar {
+  display: none; 
+}
