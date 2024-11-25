@@ -12,16 +12,25 @@ function Navbar() {
             </div>
             <ul>
                 <li>
-                    Pokémon
+                    <Link className="navbar-link" to="/">
+                        Pokémon
+                    </Link>
                 </li>
                 <li>
-                    My Pokémon
+                    <Link className="navbar-link" to="/my-pokemons">
+                        My Pokémon
+                    </Link>
                 </li>
                 <li>
-                    My Team
+                    <Link className="navbar-link" to="/my-team">
+                        My Team
+                    </Link>
+
                 </li>
                 <li>
-                    Pokédex
+                    <Link className="navbar-link" to="/pokedex">
+                        Pokédex
+                    </Link>
                 </li>
             </ul>
         </nav>

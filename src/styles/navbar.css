@@ -1,10 +1,15 @@
 .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
     background-color: #CC1000;
     padding: 1rem;
+    z-index: 1000;
 }
 
 .logo img{
@@ -23,4 +28,15 @@
     display: flex;
     padding-right: 20px;
     margin-right: 20px;
+}
+
+.navbar-link{
+    text-decoration: none;
+    color: inherit;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.navbar-link:hover{
+    color: #242424;
 }
