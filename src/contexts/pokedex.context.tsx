@@ -1,4 +1,5 @@
-import { createContext, ReactNode, useContext, useState } from "react"
+import { createContext, ReactNode, useContext } from "react"
+import usePokedexHook from "../hooks/pokedex.hook"
 
 interface Pokemon {
     name: string,
@@ -22,7 +23,7 @@ interface PokedexProviderProps {
 const PokedexContext = createContext<PokedexContexType | undefined>(undefined);
 
 export const PokedexProvider: React.FC<PokedexProviderProps> = ({ children }) => {
-    const [pokedex, setPokedex] = useState<Pokedex | null>(null);
+    const [pokedex, setPokedex] = usePokedexHook();
     return (
         <PokedexContext.Provider value={{pokedex, setPokedex}}>
             {children}
