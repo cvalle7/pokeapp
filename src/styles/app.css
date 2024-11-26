@@ -29,8 +29,15 @@
 
 .pokemon-img {
     background-color: white;
-    width: 100%;
+    border: 3px solid transparent;
+    width: 98%;
     border-radius: 15px 15px 0 0;
+    transition: border-color 0.5s ease;
+}
+
+.pokemon-img:hover {
+    cursor: pointer;
+    border-color: #3761A8;
 }
 
 .pokeball-button {
@@ -50,4 +57,102 @@
     border: 3px solid #3761A8;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.pokemon-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4%;
+    width: 20%;
+    border: 0 solid transparent;
+    border-radius: 15px 15px 18px 18px;
+    background-color: white;
+}
+
+.pokemon-info-tittle {
+    align-self: flex-start;
+    margin-left: 5%;
+    color: #353637;
+    font-weight: 750;
+}
+
+.pokemon-info img {
+    width: 50%;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 2 solid transparent;
+    background-color: #353637;
+    border-radius: 0 0 15px 15px;
+}
+
+.info-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-left p{
+    width: 70%;
+    margin-left: 15%;
+}
+
+.info-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.pokemon-type {
+    display: flex;
+    justify-content: center;
+    border: 0 solid transparent;
+    background-color: red;
+    border-radius: 15px;
+    width: 45%;
+    margin: 10% 0 0 0;
+    padding: 0;
+}
+
+.ability {
+    width: 100%;
+    margin: 2px 0 0 60%;
+    padding: 0;
+}
+
+.grass {
+    background-color: #62BE59;
+}
+
+.poison {
+    background-color: #AB5FCB;
+}
+
+.fire {
+    background-color: #FCA344;
+}
+
+.flying {
+    background-color: #99B3E7;
+}
+
+.water {
+    background-color: #599FDA;
+}
+
+.bug {
+    background-color: #62BE59;
+}
+
+.normal {
+    background-color: #98999B;
 }
