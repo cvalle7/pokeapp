@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { usePokemon } from "../contexts/pokemon.context";
 import { useNavigate } from "react-router-dom";
-import Pokecard from "./Poke-card";
+import Pokecard from "./reusable/Poke-card";
 
 
 function Pokemon() {
