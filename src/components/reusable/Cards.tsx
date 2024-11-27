@@ -46,7 +46,7 @@ function Card({ data }: { data: Pokemon }) {
             <img className="pokemon-img" alt={data.name} src={data.data.sprites.front_default} onClick={() => handleClick(data)} />
             <h3>{data.name.toUpperCase()}</h3>
             {!checkPokemons(data) ? (
-                <div className="pokeball-button" onClick={() => handlePokemon(data)}>
+                <div className="pokeball-button enable" onClick={() => handlePokemon(data)}>
                     <img className="pokeball-img" alt="pokeball" src='/src/resources/pokeball.png' />
                 </div>
 

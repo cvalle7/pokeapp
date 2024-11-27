@@ -53,7 +53,7 @@
     width: 100%;
 }
 
-.pokeball-button:hover {
+.enable:hover {
     border: 3px solid #3761A8;
     border-radius: 50%;
     cursor: pointer;
@@ -178,7 +178,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 20.1%;
-    margin-left: 3.5%;
+    margin-left: 3.9%;
     width: 58.5%;
     height: 48.6vh;
     flex-wrap: wrap;
@@ -198,6 +198,36 @@
 }
 
 .poke-info{
-    width: 32%;
-    margin: 6.1% 0.5%;
+    width: 32.6%;
+    margin: 6.1% 0;
+}
+
+.info-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+
+.info-buttons button{
+    width: 50%;
+    margin: 0 5%;
+    height: 5vh;
+    border: 3px solid transparent;
+    border-radius: 25px;
+    font-size: medium;
+    font-weight: 600;
+    transition: background-color 0.5s ease;
+}
+
+.release{
+    background-color: #FF3132;
+}
+
+.release:hover{
+    background-color: #D5160B;
+}
+
+.clear:hover{
+    background-color: #242424;
 }
