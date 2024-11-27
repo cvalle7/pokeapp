@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { usePokemon } from "../contexts/pokemon.context";
-import { usePokedex } from "../contexts/pokedex.context";
+import { usePokemon } from "../../contexts/pokemon.context";
+import { usePokedex } from "../../contexts/pokedex.context";
 
 interface Pokemon {
     name: string,
