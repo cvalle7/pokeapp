@@ -19,13 +19,6 @@ function Card({ data }: { data: Pokemon }) {
         navigate('/pokemon')
     }
 
-    const releasePokemon = (data: Pokemon) => {
-        if (pokedex) {
-            const pokemons = pokedex.pokemons.filter(p => p.name !== data.name);
-            setPokedex({ pokemons: [...pokemons] })
-        }
-    }
-
     const checkPokemons = (data: Pokemon) => {
         if (pokedex) {
             return pokedex.pokemons.some(p => p.name === data.name);
@@ -51,7 +44,7 @@ function Card({ data }: { data: Pokemon }) {
                 </div>
 
             ) : (
-                <div className="pokeball-button" onClick={() => releasePokemon(data)}>
+                <div className="pokeball-button">
                     <img className="pokeball-img" alt="pokeball" src='/src/resources/pokeball.svg' />
                 </div>
             )}
