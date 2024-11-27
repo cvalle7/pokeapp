@@ -19,7 +19,9 @@ function Pokemon() {
     return (
         <div className="main-container">
             {pokemon && (
-                <Pokecard pokemon={pokemon}></Pokecard>
+                <div className="pokemon-container">
+                    <Pokecard pokemon={pokemon}></Pokecard>
+                </div>
             )}
         </div>
     )
