@@ -59,7 +59,7 @@
     cursor: pointer;
 }
 
-.pokemon-container{
+.pokemon-container {
     margin: 5%;
     width: 20%;
 }
@@ -103,7 +103,7 @@
     align-items: center;
 }
 
-.info-left p{
+.info-left p {
     width: 70%;
     margin-left: 15%;
 }
@@ -161,7 +161,7 @@
     background-color: #98999B;
 }
 
-.poke-container{
+.poke-container {
     display: flex;
     background-image: url('/src/resources/Box_Special.jpg');
     background-repeat: no-repeat;
@@ -173,7 +173,7 @@
     margin-top: 1.5%;
 }
 
-.poke-box{
+.poke-box {
     padding: 2.5% 0 0 2%;
     display: flex;
     flex-direction: row;
@@ -185,31 +185,31 @@
     background-color: rgba(68, 61, 61, 0.5);
 }
 
-.poke-box img{
-    width: 16%;
-    height: 16%;
+.poke-box img {
+    width: auto;
+    height: 19%;
     transition: width 0.5s ease, height 0.5s ease;
 }
 
-.poke-box img:hover{
+.poke-box img:hover {
     cursor: pointer;
-    width: 10%;
-    height: 10%;
+    width: auto;
+    height: 17%;
 }
 
-.poke-info{
+.poke-info {
     width: 32.6%;
     margin: 6.1% 0;
 }
 
-.info-buttons{
+.info-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10%;
 }
 
-.info-buttons button{
+.info-buttons button {
     width: 50%;
     margin: 0 5%;
     height: 5vh;
@@ -220,14 +220,79 @@
     transition: background-color 0.5s ease;
 }
 
-.release{
+.release {
     background-color: #FF3132;
 }
 
-.release:hover{
+.release:hover {
+    cursor: pointer;
     background-color: #D5160B;
 }
 
-.clear:hover{
+.clear:hover {
+    cursor: pointer;
     background-color: #242424;
+}
+
+.selector {
+    height: 80vh;
+    width: 30%;
+    border: 6px solid #6e6e6e;
+    border-radius: 15px;
+    background-image: url('/src/resources/background.png');
+    background-size: cover;
+}
+
+.selector img{
+    height: 17%;
+    width: auto;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+
+.selector img:hover {
+    cursor: pointer;
+    width: auto;
+    height: 16%; 
+}
+
+.team-container {
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 80vh;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.team-card{
+    height: 50%;
+}
+
+.selector-tittel{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    align-self: center;
+    width: 100%;
+    color: black;
+}
+
+.send-pc{
+    display: flex;
+    justify-content: center;
+    margin: 10% 25%;
+    padding: 9% 0;
+    height: 5vh;
+    width: 50%;
+    border: 0 solid transparent;
+    border-radius: 15%;
+    transition: background-color 0.5s ease;
+}
+
+.send-pc:hover {
+    background-color: #887f7f;
+    cursor: pointer;
 }
