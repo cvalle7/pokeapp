@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Pokemon from "./components/Pokemon";
 import MyPokemons from "./components/My-pokemon";
+import MyTeam from "./components/My-Team";
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
         const getPokemons = async () => {
         }
         getPokemons();
-    }, []); <img alt="pokeapi" src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" />
+    }, []);
 
     return (
         <Router>
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/pokemon" element={<Pokemon />} />
                 <Route path="/my-pokemons" element={<MyPokemons />} />
+                <Route path="/my-team" element={<MyTeam />} />
             </Routes>
         </Router>
     );
