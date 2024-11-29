@@ -243,7 +243,7 @@
     background-size: cover;
 }
 
-.selector img{
+.selector img {
     height: 17%;
     width: auto;
     transition: width 0.5s ease, height 0.5s ease;
@@ -253,25 +253,40 @@
 .selector img:hover {
     cursor: pointer;
     width: auto;
-    height: 16%; 
+    height: 16%;
 }
 
 .team-container {
     margin-left: 2%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: row;
+    justify-content: space-between;
     height: 80vh;
     width: 70%;
     flex-wrap: wrap;
 }
 
-.team-card{
-    height: 50%;
+.team-card-container {
+    width: 30%;
+    height: 40%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
-.selector-tittel{
+.team-card {
+    margin-top: 10%;
+    width: 100%;
+    height: 50%;
+    border: 2px solid black;
+    border-radius: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.selector-tittel {
     display: flex;
     justify-content: center;
     margin-top: 2%;
@@ -280,19 +295,52 @@
     color: black;
 }
 
-.send-pc{
+.avatar {
+    width: 35%;
+    height: 100%;
+    background-color: white;
     display: flex;
     justify-content: center;
-    margin: 10% 25%;
-    padding: 9% 0;
-    height: 5vh;
-    width: 50%;
-    border: 0 solid transparent;
-    border-radius: 15%;
-    transition: background-color 0.5s ease;
+    align-items: center;
+    border-right: 2px solid black;
 }
 
-.send-pc:hover {
-    background-color: #887f7f;
+.avatar img {
+    height: 10vh;
+    width: auto;
+}
+
+
+.team-info {
+    padding-left: 5%;
+    width: 65%;
+    height: 100%;
+    background-color: #3B91DF;
+    border-radius: 0 0 15% 0;
+    font-weight: 600;
+}
+
+.stamine {
+    width: 90%;
+    height: 4%;
+    border: 2px solid black;
+    background-color: #6AEEA1;
+    margin-bottom: 0;
+}
+
+.disabled{
+    background-color: black;
+}
+
+.send-pc{
+    margin-top: 5%;
+    height: 10%;
+    border-radius: 20px;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+
+.send-pc:hover{
     cursor: pointer;
+    background-color: #353637;
+    border-color: transparent;
 }
