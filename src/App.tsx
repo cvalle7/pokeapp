@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Pokemon from "./components/Pokemon";
 import MyPokemons from "./components/My-pokemon";
 import MyTeam from "./components/My-Team";
+import Podekex from "./components/Pokedex";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/pokemon" element={<Pokemon />} />
                 <Route path="/my-pokemons" element={<MyPokemons />} />
                 <Route path="/my-team" element={<MyTeam />} />
+                <Route path="/pokedex" element={<Podekex/>}/>
             </Routes>
         </Router>
     );
