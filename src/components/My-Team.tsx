@@ -7,7 +7,6 @@ function MyTeam() {
     const { pokedex } = usePokedex()
 
     const renderTeam = (p: any) => {
-        console.log(p);
         return (
             <div className="team-card-container">
                 {p ? (

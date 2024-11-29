@@ -1,4 +1,5 @@
 import React, { createContext, ReactNode, useContext, useState } from "react";
+import useMyTeamHook from "../hooks/myTeam.hook";
 
 interface Pokemon {
     name: string,
@@ -22,7 +23,7 @@ interface MyTeamProviderProps {
 const MyTeamContext = createContext<myTeamContextType | undefined>(undefined)
 
 export const MyTeamProvider: React.FC<MyTeamProviderProps> = ({ children }) => {
-    const [myTeam, setMyTeam] = useState<MyTeam | null>(null);
+    const [myTeam, setMyTeam] = useMyTeamHook();
     return (
         <MyTeamContext.Provider value={{ myTeam, setMyTeam }}>
             {children}
