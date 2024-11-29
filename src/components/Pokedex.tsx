@@ -16,7 +16,6 @@ function Podekex() {
     }, []);
 
     const handleIndex = (i: number) => {
-        console.log(pokemons);
         if (index == 0 && i < 0) {
             setIndex(0);
         } else {

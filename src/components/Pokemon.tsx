@@ -13,7 +13,6 @@ function Pokemon() {
         if (!pokemon) {
             navigate('/')
         }
-        console.log(pokemon)
     })
 
     return (
