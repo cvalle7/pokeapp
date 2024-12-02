@@ -1,0 +1,7 @@
+REACT APP
+
+npm create vite@latest pokeapi-project --template react
+
+typescript
+
+npm i
